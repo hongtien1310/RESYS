@@ -1,0 +1,1427 @@
+﻿@{
+    ViewBag.Title = "Trang chủ";
+}
+<div class="parallax-flight parallax-home parallaxBg">
+    <div class="container">
+        <div class="row" style="">
+            <div class="col-md-12 ticket-search">
+                <div class="close-content">
+                    <a href="@Url.Action("Index","Home")">x</a>
+                </div>
+                <ul class="nav nav-tabs" id="searchForm">
+                    <li class="active">
+                        <a data-toggle="tab" href="#vemaybay" aria-expanded="true">Vé máy bay</a>
+                    </li>
+
+                    <li class="">
+                        <a data-toggle="tab" href="#khachsan" aria-expanded="false">Khách sạn</a>
+                    </li>
+
+
+                </ul>
+                <div class="tab-content flight-result">
+                    <div id="vemaybay" class="tab-pane active">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#chieudi" aria-expanded="true">TP HỒ CHÍ MINH đi HÀ NỘI</a>
+                                    </li>
+
+                                    <li class="">
+                                        <a data-toggle="tab" href="#chieuve" aria-expanded="false">HÀ NỘI đi TP HỒ CHÍ MINH</a>
+                                    </li>
+                            
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="chieudi" class="tab-pane active">
+                                        <table class="table">
+                <tbody><tr>
+                    <td class="date">
+                        <a href="javascript:" class="pre"></a>
+                    </td>
+                    <td class="date">
+                        <a href="/vi/Flight/ChangeDate?sessionid=20150611171310&amp;countdate=-3&amp;outbound=True">
+                        <span class="day">T6</span>
+                        <span class="date1">12/06</span><br />
+                            <span class="price">600.000 đ</span>
+                            </a>
+                    </td>
+                    
+                    <td class="date">
+                       
+                        <a href="/vi/Flight/ChangeDate?sessionid=20150611171310&amp;countdate=1&amp;outbound=True">
+                        
+                            <span class="day">T7</span>
+                        <span class="date1">13/06</span><br />
+                        <span class="price">600.000 đ</span>
+                            </a>
+                    </td>
+                    <td class="date active">
+                         <span class="day">CN</span>
+                        <span class="date1">14/06</span><br />
+                            <span class="price">600.000 đ</span>
+                    </td>
+                    <td class="date">
+                        <a href="/vi/Flight/ChangeDate?sessionid=20150611171310&amp;countdate=2&amp;outbound=True">
+                        <span class="day">T2</span>
+                        <span class="date1">15/06</span><br />
+                            <span class="price">600.000 đ</span>
+                            </a>
+                    </td>
+                    <td class="date">
+                        <a href="/vi/Flight/ChangeDate?sessionid=20150611171310&amp;countdate=3&amp;outbound=True">
+                        <span class="day">T3</span>
+                        <span class="date1">16/06</span><br />
+                            <span class="price">600.000 đ</span>
+                            </a>
+                    </td>
+                    <td class="date">
+                        <a href="javascript:" class="next"></a>
+                    </td>
+                </tr>
+            </tbody></table>
+                                        <div class="boxscroll">
+                                        <table class="table">
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="#modal-table" data-toggle="modal" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="#modal-table" data-toggle="modal" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                            </div>
+                                        </div>
+                                    <div id="chieuve" class="tab-pane">
+                                         <table class="table">
+                <tbody><tr>
+                    <td class="date">
+                        <a href="javascript:" class="pre"></a>
+                    </td>
+                    <td class="date">
+                        <a href="/vi/Flight/ChangeDate?sessionid=20150611171310&amp;countdate=-3&amp;outbound=True">
+                        <span class="day">T6</span>
+                        <span class="date1">12/06</span><br />
+                            <span class="price">600.000 đ</span>
+                            </a>
+                    </td>
+                    
+                    <td class="date">
+                       
+                        <a href="/vi/Flight/ChangeDate?sessionid=20150611171310&amp;countdate=1&amp;outbound=True">
+                        
+                            <span class="day">T7</span>
+                        <span class="date1">13/06</span><br />
+                        <span class="price">600.000 đ</span>
+                            </a>
+                    </td>
+                    <td class="date active">
+                         <span class="day">CN</span>
+                        <span class="date1">14/06</span><br />
+                            <span class="price">600.000 đ</span>
+                    </td>
+                    <td class="date">
+                        <a href="/vi/Flight/ChangeDate?sessionid=20150611171310&amp;countdate=2&amp;outbound=True">
+                        <span class="day">T2</span>
+                        <span class="date1">15/06</span><br />
+                            <span class="price">600.000 đ</span>
+                            </a>
+                    </td>
+                    <td class="date">
+                        <a href="/vi/Flight/ChangeDate?sessionid=20150611171310&amp;countdate=3&amp;outbound=True">
+                        <span class="day">T3</span>
+                        <span class="date1">16/06</span><br />
+                            <span class="price">600.000 đ</span>
+                            </a>
+                    </td>
+                    <td class="date">
+                        <a href="javascript:" class="next"></a>
+                    </td>
+                </tr>
+            </tbody></table>
+                                        <div class="boxscroll">
+                                        <table class="table">
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vj.png">
+                                                </td>
+                                                <td class="col-lg-1">VJ885</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-vn.png">
+                                                </td>
+                                                <td class="col-lg-1">VN002</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                <td class="col-lg-2">
+                                                    <a href="javascript:" class="btn btn-flight">Chi tiết</a>
+                                                </td>
+                                                <td class="col-lg-1">
+                                                    <a href="javascript:" class="btn btn-flight">Chọn</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                            </div>
+                                        </div>
+                                </div>
+                                </div>
+                            <div class="col-lg-6">
+                                <div class="flight-choice">
+                                    <div class="item-flight">
+                                       <table class="table header-info">
+                                           <tr>
+                                               <td class="rowdetail">Chiều đi</td>
+                                               <td>từ <b>HÀ NỘI</b>  đến <b>TP HỒ CHÍ MINH</b></td>
+                                               <td>thứ Tư ngày 29/06/2015</td>
+                                               <td class="detail"><a href="javascript">Xem chi tiết</a></td>
+                                           </tr>
+
+                                       </table>
+                                    <table class="table tableinfo">
+                                        <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                
+                                            </tr>
+                                    </table>
+                                    <table class="table tabledetail">
+                                        <tr>
+                                            <td>
+                                                <span>Người lớn</span><br />
+                                                <span class="countper">2 người</span><br />
+                                                <span class="price">3.000.000 đ</span>
+                                            </td>
+                                            <td>
+                                                <span>Trẻ em</span><br />
+                                                <span class="countper">0</span><br />
+                                            </td>
+                                            <td>
+                                                <span>Em bé</span><br />
+                                                <span class="countper">0</span><br />
+                                            </td>
+                                            <td>
+                                                <span>Thuế phí</span><br />
+                                                <span class="price">700.000 đ</span><br />
+                                            </td>
+                                            <td>
+                                                 <span>Hành lý</span><br />
+                                                <span class="price">700.000 đ</span><br />
+                                            </td>
+                                            <td class="total">7.200.000 VNĐ</td>
+                                            </tr>
+                                    </table>
+                                        </div>
+                                    <div class="item-flight">
+                                       <table class="table header-info">
+                                           <tr>
+                                               <td class="rowdetail">Chiều về</td>
+                                               <td>từ <b>HÀ NỘI</b>  đến <b>TP HỒ CHÍ MINH</b></td>
+                                               <td>thứ Tư ngày 29/06/2015</td>
+                                               <td class="detail"><a href="javascript">Xem chi tiết</a></td>
+                                           </tr>
+
+                                       </table>
+                                    <table class="table tableinfo">
+                                        <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                
+                                            </tr>
+                                    </table>
+                                    <table class="table tabledetail">
+                                        <tr>
+                                            <td>
+                                                <span>Người lớn</span><br />
+                                                <span class="countper">2 người</span><br />
+                                                <span class="price">3.000.000 đ</span>
+                                            </td>
+                                            <td>
+                                                <span>Trẻ em</span><br />
+                                                <span class="countper">0</span><br />
+                                            </td>
+                                            <td>
+                                                <span>Em bé</span><br />
+                                                <span class="countper">0</span><br />
+                                            </td>
+                                            <td>
+                                                <span>Thuế phí</span><br />
+                                                <span class="price">700.000 đ</span><br />
+                                            </td>
+                                            <td>
+                                                 <span>Hành lý</span><br />
+                                                <span class="price">700.000 đ</span><br />
+                                            </td>
+                                            <td class="total">7.200.000 VNĐ</td>
+                                            </tr>
+                                    </table>
+                                        </div>
+                                    <div class="item-flight">
+                                       <table class="table header-info">
+                                           <tr>
+                                               <td class="rowdetail">Chiều đi</td>
+                                               <td>từ <b>HÀ NỘI</b>  đến <b>TP HỒ CHÍ MINH</b></td>
+                                               <td>thứ Tư ngày 29/06/2015</td>
+                                               <td class="detail"><a href="javascript">Xem chi tiết</a></td>
+                                           </tr>
+
+                                       </table>
+                                    <table class="table tableinfo">
+                                        <tr>
+                                                <td class="col-lg-1">
+                                                    <img src="/images/fl-js.png">
+                                                </td>
+                                                <td class="col-lg-1">BL886</td>
+                                                <td class="col-lg-3">HAN | <b>21:50</b></td>
+                                                <td class="col-lg-3">SG | <b>23:50</b></td>
+                                                <td class="col-lg-3"><b>1.500.000 VNĐ</b></td>
+                                                
+                                            </tr>
+                                    </table>
+                                    <table class="table tabledetail">
+                                        <tr>
+                                            <td>
+                                                <span>Người lớn</span><br />
+                                                <span class="countper">2 người</span><br />
+                                                <span class="price">3.000.000 đ</span>
+                                            </td>
+                                            <td>
+                                                <span>Trẻ em</span><br />
+                                                <span class="countper">0</span><br />
+                                            </td>
+                                            <td>
+                                                <span>Em bé</span><br />
+                                                <span class="countper">0</span><br />
+                                            </td>
+                                            <td>
+                                                <span>Thuế phí</span><br />
+                                                <span class="price">700.000 đ</span><br />
+                                            </td>
+                                            <td>
+                                                 <span>Hành lý</span><br />
+                                                <span class="price">700.000 đ</span><br />
+                                            </td>
+                                            <td class="total">7.200.000 VNĐ</td>
+                                            </tr>
+                                    </table>
+                                        </div>
+                                </div>
+                                <div class="flight-filter">
+                                    <div class="title">LỌC CHUYẾN BAY</div>
+                                    <div class="row">
+                                        <div class="col-xs-4 filter-item">
+                                            <label>
+														<input name="form-field-checkbox" class="custom custom-checkbox-2" type="checkbox">
+														<span class="lbl"><img src="/images/ck-vn.png" /></span>
+													</label>
+                                        </div>
+                                        <div class="col-xs-4 filter-item">
+                                            <label>
+														<input name="form-field-checkbox" class="custom custom-checkbox-2" type="checkbox">
+														<span class="lbl"><img src="/images/ck-js.png" /></span>
+													</label>
+                                        </div>
+                                        <div class="col-xs-4 filter-item">
+                                            <label>
+														<input name="form-field-checkbox" class="custom custom-checkbox-2" type="checkbox">
+														<span class="lbl"><img src="/images/ck-vj.png" /></span>
+													</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-10 col-centered"><label style="float:right">[<input type="text" readonly class="inputfromto" id="dep0">h - <input type="text" readonly class="inputfromto" id="dep1">h ]</label></div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-10 col-centered">
+                                            <div id="slider-range"></div>
+                                            <p class="rule">
+                                <span class="h-6">0h</span>
+                                                <span class="h-6">6h</span>
+                                <span class="h-6">12h</span>
+                                                <span class="h-6">18h</span>
+                                <span class=" last">24h</span>
+                            </p>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    <div class="row margintop20" style="margin-left:0;margin-right:0">
+                                        <div class="col-xs-2 layout-btn-step">
+                                            <a href="javascript:" class="btn-step visited">Tìm chuyến bay</a>
+                                        </div>
+                                        <div class="col-xs-2 layout-btn-step">
+                                            <a href="javascript:" class="btn-step active">Lựa chọn chuyến bay</a>
+                                        </div>
+                                        <div class="col-xs-2 layout-btn-step">
+                                            <a href="javascript:" class="btn-step">Thông tin khách hàng</a>
+                                        </div>
+                                        <div class="col-xs-2 layout-btn-step">
+                                            <a href="javascript:" class="btn-step">Thanh toán</a>
+                                        </div>
+                                        <div class="col-xs-4 layout-btn-step">
+                                            <a href="javascript:" class="btn-continue">Tiếp tục</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div id="khachsan" class="tab-pane">
+                    </div>
+
+
+                </div>
+            </div>
+            <div id="modal-table" class="modal fade" tabindex="-1">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header no-padding">
+												<div class="table-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+														<span class="white">&times;</span>
+													</button>
+													Vé bay từ Hà Nội đến TP Hồ Chí Minh
+												</div>
+											</div>
+
+											<div class="modal-body">
+    <table class="table detailflight">
+        <tbody><tr>
+    <td valign="top" style="text-align:left">
+        <p>
+            Từ <b>Hà Nội</b>, Việt Nam
+        </p>
+        <p>
+            Sân bay
+            : <b>Nội Bài (HAN)</b><br>
+        </p>
+        <p>
+            <!---->
+         Giờ bay: <b>23:40</b>, 13/06/2015
+        </p>
+    </td>
+    <td valign="top" style="text-align:left">
+        <p>
+            tới <b>Hồ Chí Minh</b>, Việt Nam
+        </p>
+        <p>
+            Sân bay
+            : <b>Tân Sơn Nhất (SGN)</b>
+        </p>
+        <p>
+
+            Giờ đến: <b>01:45</b>, 13/06/2015
+        </p>
+    </td>
+    <td valign="top" style="text-align:left">
+                                                                               <p>
+            Hãng
+            : <img src="/images/fl-vj.png">
+            </p>
+        
+        <p>
+            <!---->
+            Mã chuyến bay: <b>VJ191</b>
+        </p>
+        <p>
+            <!---->
+            Hạng vé: <b>Eco</b>
+        </p>
+    </td>
+</tr>
+    </tbody></table>
+    <table class="price-break table" style="border-top:1px solid #ccc;border-bottom:1px solid #ccc">
+    <tbody><tr class="title-b">
+        <td>Loại Hành Khách
+        </td>
+        <td>Số Lượng Vé
+        </td>
+        <td>Giá mỗi vé
+        </td>
+        <td>Thuế và phụ phí
+        </td>
+        <td>Tổng Giá
+        </td>
+    </tr>
+        <tr>
+    <td align="center" class="pax">
+        Người lớn
+    </td>
+    <td align="center" class="pax">
+        1
+    </td>
+    <td align="center" class="pax">
+        1.030.000 VNĐ
+    </td>
+    <td align="center" class="pax">
+    340.000 VNĐ
+    </td>
+    <td align="center" class="pax">
+        1.370.000 VNĐ
+    </td>
+</tr>
+        <tr class="total-b">
+        <td class="footer">Tổng
+        </td>
+        <td class="pax">1
+        </td>
+        <td class="pax">1.030.000 VNĐ
+        </td>
+        <td class="pax">340.000 VNĐ
+        </td>
+        <td class="pax">1.370.000 VNĐ
+        </td>
+    </tr>
+</tbody></table>
+    <table class="table condition" style="margin:0 10px">
+                <tbody><tr>
+                <td class="col-xs-3" style="text-align:left">
+                    <b>Thay đổi tên</b>
+                </td>
+                    <td class="col-xs-9" style="text-align:left">
+                    Thu phí 352.000 VNĐ/chặng
+                </td>
+            </tr>
+                <tr>
+                <td class="col-xs-3" style="text-align:left">
+                    <b>Thay đổi hành trình</b>
+                </td>
+                    <td class="col-xs-9" style="text-align:left">
+                    Thu phí 352.000 VNĐ + chênh lệch giá vé (nếu có)
+                </td>
+            </tr>
+                <tr>
+                <td class="col-xs-3" style="text-align:left">
+                    <b> Thay đổi ngày giờ bay</b>
+                </td>
+                    <td class="col-xs-9" style="text-align:left">
+                    Thu phí 352.000 VNĐ + chênh lệch giá vé (nếu có)
+                </td>
+            </tr>
+                <tr>
+                <td class="col-xs-3" style="text-align:left">
+                    <b>Hoàn vé</b>
+                </td>
+                    <td class="col-xs-9" style="text-align:left">
+                    Không được phép
+                </td>
+            </tr>
+                <tr>
+                <td class="col-xs-3" style="text-align:left">
+                    <b>Thời hạn thay đổi</b>
+                </td>
+                    <td class="col-xs-9" style="text-align:left">
+                    12 tiếng trước giờ khởi hành
+                </td>
+            </tr>
+                <tr>
+                <td class="col-xs-3" style="text-align:left">
+                    <b>Hành lý xách tay</b>
+                </td>
+                    <td class="col-xs-9" style="text-align:left">
+                    7kg
+                </td>
+            </tr>
+                <tr>
+                <td class="col-xs-3" style="text-align:left">
+                    <b>Hành lý ký gửi</b>
+                </td>
+                    <td class="col-xs-9" style="text-align:left">
+                    Vui lòng chọn ở bước sau
+                </td>
+            </tr>
+    </tbody></table>
+											</div>
+
+										</div><!-- /.modal-content -->
+									</div><!-- /.modal-dialog -->
+								</div>
+        </div>
+    </div>
+</div>
+<div class="container home-content">
+    <div class="row margintop50">
+    <div class="col-sm-6">
+        <div class="title">Vé tốt trong kỳ</div>
+        <p>Thỏa sức lựa chọn những vé máy bay rẻ nhất cùng chúng tôi</p>
+    </div>
+        <div class="col-sm-6" style="text-align:right;">
+            <img src="/images/logo-flight.png" />
+        </div>
+        </div>
+    <div class="row margintop30" >
+    <div class="col-md-6">
+        <div class="row marginbot20">
+            <div class="col-xs-4 good-ticket active">
+                <p class="flight">Hà Nội - HCM</p>
+                <div class="price">Từ: 980.000 Đ</div>
+                <div class="date">09/06/2015</div>
+                <div class="info">Lễ hội hoa quả</div>
+            </div>
+            <div class="col-xs-4 good-ticket">
+                <p class="flight">Hà Nội - HCM</p>
+                <div class="price">Từ: 980.000 Đ</div>
+                <div class="date">09/06/2015</div>
+                <div class="info">Lễ hội hoa quả</div>
+            </div>
+            <div class="col-xs-4 good-ticket">
+                <p class="flight">Hà Nội - HCM</p>
+                <div class="price">Từ: 980.000 Đ</div>
+                <div class="date">09/06/2015</div>
+                <div class="info">Lễ hội hoa quả</div>
+            </div>
+        </div> 
+        <div class="row marginbot20">
+            <div class="col-xs-4 good-ticket">
+                <p class="flight">Hà Nội - HCM</p>
+                <div class="price">Từ: 980.000 Đ</div>
+                <div class="date">09/06/2015</div>
+                <div class="info">Lễ hội hoa quả</div>
+            </div>
+            <div class="col-xs-4 good-ticket">
+                <p class="flight">Hà Nội - HCM</p>
+                <div class="price">Từ: 980.000 Đ</div>
+                <div class="date">09/06/2015</div>
+                <div class="info">Lễ hội hoa quả</div>
+            </div>
+            <div class="col-xs-4 good-ticket">
+                <p class="flight">Hà Nội - HCM</p>
+                <div class="price">Từ: 980.000 Đ</div>
+                <div class="date">09/06/2015</div>
+                <div class="info">Lễ hội hoa quả</div>
+            </div>
+        </div> 
+        <div class="row marginbot20">
+            <div class="col-xs-4 good-ticket">
+                <p class="flight">Hà Nội - HCM</p>
+                <div class="price">Từ: 980.000 Đ</div>
+                <div class="date">09/06/2015</div>
+                <div class="info">Lễ hội hoa quả</div>
+            </div>
+            <div class="col-xs-4 good-ticket">
+                <p class="flight">Hà Nội - HCM</p>
+                <div class="price">Từ: 980.000 Đ</div>
+                <div class="date">09/06/2015</div>
+                <div class="info">Lễ hội hoa quả</div>
+            </div>
+            <div class="col-xs-4 good-ticket">
+                <p class="flight">Hà Nội - HCM</p>
+                <div class="price">Từ: 980.000 Đ</div>
+                <div class="date">09/06/2015</div>
+                <div class="info">Lễ hội hoa quả</div>
+            </div>
+        </div>    
+    </div>
+        <div class="col-sm-6">
+            <div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=679197728830537";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-post" data-href="https://www.facebook.com/RoyalExpress.Vn/posts/837329513000086" data-width="600"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/RoyalExpress.Vn/posts/837329513000086"><p>&#x110;&#x1eb7;t V&#xe9; Nhanh - Canh V&#xe9; T&#x1ed1;t !</p>Posted by <a href="https://www.facebook.com/RoyalExpress.Vn">Vé Máy Bay RoyalExpress.Vn</a> on <a href="https://www.facebook.com/RoyalExpress.Vn/posts/837329513000086">Tuesday, 9 June 2015</a></blockquote></div></div>
+            <div style="margin-top:20px;text-align:center">
+            <a href="#" class="btn btn-goodticket">Đặt vé !</a>
+            <a href="#" class="btn btn-goodticket">Ghi nhớ !</a>
+                </div>
+            </div>
+        </div>
+    <div class="row margintop50">
+    <div class="col-sm-12">
+        <div class="title">Khám phá</div>
+        <p>Hãy khám phá những địa điểm du lịch cùng chúng tôi</p>
+    </div>
+       
+        </div>
+    <div class="row grid margintop30">
+        <div class="grid-sizer"></div>
+  
+  <div class="grid-item">
+      <img src="/images/grid4.png" class="img-responsive" />
+      <div class="caption">
+          <div class="title">
+              Đà nẵng
+          </div>
+           <div class="desciption">
+              Đà Nẵng điểm đến lý tưởng hè 2015
+          </div>
+      </div>
+  </div>
+        <div class="grid-item">
+            <img src="/images/grid5.png" class="img-responsive" />
+        </div>
+  <div class="grid-item">
+      <img src="/images/grid4.png" class="img-responsive" />
+  </div>
+        <div class="grid-item grid-item--width2 grid-item--height2">
+      <img src="/images/grid1.png" class="img-responsive"/>
+  </div>
+  <div class="grid-item">
+      <img src="/images/grid2.png" class="img-responsive" />
+  </div>
+  <div class="grid-item">
+      <img src="/images/grid3.png" class="img-responsive" />
+  </div>
+        <div class="grid-item">
+            <img src="/images/grid5.png" class="img-responsive" />
+        </div>
+  <div class="grid-item grid-item--width2">
+      <img src="/images/grid6.png" class="img-responsive" />
+  </div>
+
+        </div>
+</div>
+
+    
+<script type="text/javascript">
+    var date = new Date();
+    date.setDate(date.getDate());
+    $('.date-picker').datepicker({
+        autoclose: true,
+        todayHighlight: true,
+        startDate: date,
+        setDate: date,
+        numberOfMonths: 2,
+    });
+    var datedepart = new Date();
+    var datearrive = new Date();
+    datedepart.setDate(date.getDate() + 2);
+    datearrive.setDate(date.getDate() + 9);
+    $("#departuredate").datepicker("setDate", datedepart);
+    $("#returndate").datepicker("setDate", datearrive);
+    $(document).ready(function () {
+
+        $('.grid').isotope({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            masonry: {
+                columnWidth: '.grid-sizer'
+            }
+        });
+
+    });
+        $("#slider-range").slider({
+            range: true,
+            min: 0,
+            max: 24,
+            values: [0, 24],
+            slide: function (event, ui) {
+                $("#dep0").val(ui.values[0]);
+                $("#dep1").val(ui.values[1]);
+
+            }
+        });
+        $("#dep0").val($("#slider-range").slider("values", 0));
+        $("#dep1").val($("#slider-range").slider("values", 1));
+        $("#slider-range").on("slidestop", function (event, ui) {
+            
+        });
+</script>
