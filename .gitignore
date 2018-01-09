@@ -190,7 +190,4 @@ Web.config.orig
 nuget/
 .vs/
 us.stackdump
-Falcon.Web/App_Data/Logs/
-Falcon.Web/Web.config
-Falcon.Web/Assets/dist
-/Falcon.Web/bower_components
+RESYS.WEB/Uploads
