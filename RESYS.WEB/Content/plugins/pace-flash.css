@@ -11,51 +11,50 @@
 }
 
 .pace .pace-progress {
-  background: #72c02c;
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  left: 0;
-  height: 2px;
-
-  -webkit-transition: width 1s;
-  -moz-transition: width 1s;
-  -o-transition: width 1s;
-  transition: width 1s;
+    background: #c72528;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    height: 2px;
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
 }
 
 .pace .pace-progress-inner {
-  display: block;
-  position: absolute;
-  right: 0px;
-  width: 100px;
-  height: 100%;
-  box-shadow: 0 0 10px #72c02c, 0 0 5px #72c02c;
-  opacity: 1.0;
-  -webkit-transform: rotate(3deg) translate(0px, -4px);
-  -moz-transform: rotate(3deg) translate(0px, -4px);
-  -ms-transform: rotate(3deg) translate(0px, -4px);
-  -o-transform: rotate(3deg) translate(0px, -4px);
-  transform: rotate(3deg) translate(0px, -4px);
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px #c72528, 0 0 5px #c72528;
+    opacity: 1.0;
+    -webkit-transform: rotate(3deg) translate(0px, -4px);
+    -moz-transform: rotate(3deg) translate(0px, -4px);
+    -ms-transform: rotate(3deg) translate(0px, -4px);
+    -o-transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0px, -4px);
 }
 
 .pace .pace-activity {
-  display: block;
-  position: fixed;
-  z-index: 2000;
-  top: 15px;
-  right: 15px;
-  width: 14px;
-  height: 14px;
-  border: solid 2px transparent;
-  border-top-color: #72c02c;
-  border-left-color: #72c02c;
-  border-radius: 10px !important;
-  -webkit-animation: pace-spinner 400ms linear infinite;
-  -moz-animation: pace-spinner 400ms linear infinite;
-  -ms-animation: pace-spinner 400ms linear infinite;
-  -o-animation: pace-spinner 400ms linear infinite;
-  animation: pace-spinner 400ms linear infinite;
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    top: 15px;
+    right: 15px;
+    width: 14px;
+    height: 14px;
+    border: solid 2px transparent;
+    border-top-color: #c72528;
+    border-left-color: #c72528;
+    border-radius: 10px !important;
+    -webkit-animation: pace-spinner 400ms linear infinite;
+    -moz-animation: pace-spinner 400ms linear infinite;
+    -ms-animation: pace-spinner 400ms linear infinite;
+    -o-animation: pace-spinner 400ms linear infinite;
+    animation: pace-spinner 400ms linear infinite;
 }
 
 @-webkit-keyframes pace-spinner {
