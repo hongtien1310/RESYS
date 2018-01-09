@@ -1126,6 +1126,8 @@
     <Content Include="Views\Album\Detail.cshtml" />
     <Content Include="Views\Company\Detail.cshtml" />
     <Content Include="Views\Shared\Header.cshtml" />
+    <Content Include="Views\Shared\_SearchLayout.cshtml" />
+    <Content Include="Views\Shared\SearchHeader.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
