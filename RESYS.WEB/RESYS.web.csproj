@@ -22,6 +22,8 @@
     <IISExpressUseClassicPipelineMode />
     <Use64BitIISExpress />
     <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -191,6 +193,7 @@
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\SiteMapController.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TimestampedContentExtensions.cs" />
     <Compile Include="Extensions\UrlExtensions.cs" />
     <Compile Include="Filters\RequireAuthorizationAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -306,11 +309,31 @@
     <Content Include="Areas\Admin\Content\Script\select2.min.js" />
     <Content Include="Areas\Admin\Content\Script\spin.min.js" />
     <Content Include="Areas\Admin\Content\Script\typeahead.jquery.min.js" />
+    <Content Include="assets\dist\css\home.css" />
+    <Content Include="assets\dist\css\home.min.css">
+      <DependentUpon>home.css</DependentUpon>
+    </Content>
+    <Content Include="assets\dist\js\home.js" />
+    <Content Include="assets\dist\js\home.min.js">
+      <DependentUpon>home.js</DependentUpon>
+    </Content>
     <Content Include="Content\bxslider\images\bx_loader.gif" />
     <Content Include="Content\bxslider\images\controls.png" />
     <Content Include="Content\bxslider\jquery.bxslider.css" />
     <Content Include="Content\bxslider\plugins\jquery.easing.1.3.js" />
     <Content Include="Content\bxslider\plugins\jquery.fitvids.js" />
+    <Content Include="Content\css\duan.min-1046.css" />
+    <Content Include="Content\css\flexslider.min.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\footer.min-1046.css" />
+    <Content Include="Content\css\ion.rangeSlider.css" />
+    <Content Include="Content\css\ion.rangeSlider.skinFlat.css" />
+    <Content Include="Content\css\jquery-ui.min.css" />
+    <Content Include="Content\css\material-design-iconic-font.2.css" />
+    <Content Include="Content\css\news.css" />
+    <Content Include="Content\css\normalize.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\style.min-1046.css" />
     <Content Include="Content\custom.css" />
     <Content Include="Content\2010.2.713\Default\editor.png" />
     <Content Include="Content\2010.2.713\Default\loading.gif" />
@@ -335,6 +358,31 @@
     <Content Include="Content\fancybox\jquery.fancybox.js" />
     <Content Include="Content\fancybox\jquery.fancybox.pack.js" />
     <Content Include="Content\fckeditor\content.css" />
+    <Content Include="Content\js\2775524.js" />
+    <Content Include="Content\js\analytics.js" />
+    <Content Include="Content\js\api.js" />
+    <Content Include="Content\js\common.js" />
+    <Content Include="Content\js\external-1046.js" />
+    <Content Include="Content\js\fap.min-1046.js" />
+    <Content Include="Content\js\fb.js" />
+    <Content Include="Content\js\gtm.js" />
+    <Content Include="Content\js\header.min-1046.js" />
+    <Content Include="Content\js\home-v2.min-1046.js" />
+    <Content Include="Content\js\hotjar-425273.js" />
+    <Content Include="Content\js\jquery-ui.min.js" />
+    <Content Include="Content\js\jquery.flexslider.jfix-0.0.1.min-100.js" />
+    <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\jquery.ui.map.full.min.js" />
+    <Content Include="Content\js\jquery.ui.map.js" />
+    <Content Include="Content\js\leadflows.js" />
+    <Content Include="Content\js\markerwithlabel.js" />
+    <Content Include="Content\js\modules-33471959813a5b6daf555d491fc2c31d.js" />
+    <Content Include="Content\js\recaptcha__en.js" />
+    <Content Include="Content\js\rever-options.min-1046.js" />
+    <Content Include="Content\js\sdk.js" />
+    <Content Include="Content\js\stats.js" />
+    <Content Include="Content\js\tracking.min-1046.js" />
+    <Content Include="Content\js\util.js" />
     <Content Include="Content\plugins\animate.css" />
     <Content Include="Content\plugins\bootstraps\bootstrap.min.css" />
     <Content Include="Content\plugins\datepicker.min.css" />
@@ -554,6 +602,7 @@
     <Content Include="Areas\Admin\Views\Album\UpdateImage.cshtml" />
     <Content Include="Areas\Admin\Views\Album\SearchAlbumImage.cshtml" />
     <Content Include="Areas\Admin\Views\Album\UpdateAlbumImage.cshtml" />
+    <Content Include="bundleconfig.json" />
     <None Include="Properties\PublishProfiles\TCG.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Images\bg-breadcrumbs.png" />
@@ -1119,6 +1168,13 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets" Condition="Exists('..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildBundlerMinifier.2.6.362\build\BuildBundlerMinifier.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

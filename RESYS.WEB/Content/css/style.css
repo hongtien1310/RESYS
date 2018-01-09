@@ -1,10 +1,4 @@
- * {
-     -moz-box-sizing: border-box;
-     -webkit-box-sizing: border-box;
-     box-sizing: border-box;
-     text-rendering: geometricPrecision
- }
- html,
+html,
  body,
  div,
  span,
@@ -10218,7 +10212,6 @@
      font-size: 14px;
      color: #303339;
      outline: 0;
-     background-image: url('../images/download (1).svg');
      background-repeat: no-repeat;
      background-position: right;
      margin-left: 10px
@@ -10540,7 +10533,6 @@
  }
  .tab-search {
      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
-     !important;
      width: 100%;
      height: 60px;
      background: #fff;
@@ -16011,3 +16003,47 @@ body.fb_hidden {
         opacity: .5;
         transform: scale(.75, .75)
     }
+.a:focus, a:hover {
+    text-decoration: none;
+}
+
+input[type=button], button[type=button], input[type=submit], button[type=submit] {
+    cursor: pointer;
+}
+
+    input[type=button]:focus, button[type=button]:focus, input[type=submit]:focus, button[type=submit]:focus, input[type=checkbox]:focus + label:after, input[type=checkbox]:focus, input[type=radio]:focus + label:after, input[type=radio]:focus {
+        outline: -webkit-focus-ring-color auto 5px !important;
+    }
+
+.rcta {
+    text-align: center;
+}
+
+    .rcta * {
+        max-width: 100%;
+        height: auto;
+    }
+
+.image-normalized {
+    image-rendering: auto !important;
+}
+
+.image-pixelated, .bg-neiberhood {
+    image-rendering: crisp-edges !important;
+    image-rendering: pixelated !important;
+}
+
+.image-optimized, img {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: optimize-contrast;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.search-sub form {
+    overflow: visible;
+    width: 100%;
+    float: left;
+}

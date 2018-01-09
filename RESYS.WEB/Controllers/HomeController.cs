@@ -14,16 +14,16 @@ namespace RESYS.WEB.Controllers
 	{
 		public ActionResult Index()
 		{
-			ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
-			ViewBag.Title = "aaa";
-		    var listslide = ServiceFactory.SlideBannerManager.SelectTop(10, Culture);
-            ViewData["ListSlide"] = listslide;
-            var listcompanycate = ServiceFactory.CompanyCateManager.GetTopHot(2, Culture);
-            ViewData["ListCompanyCate"] = listcompanycate;
-            var listnewshot = ServiceFactory.NewsManager.GetTopHot(2, Culture);
-            ViewData["ListNewsHot"] = listnewshot;
-            var listcompany = ServiceFactory.CompanyManager.GetAllActive(Culture);
-            ViewData["ListCompany"] = listcompany;
+			//ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+			//ViewBag.Title = "aaa";
+		 //   var listslide = ServiceFactory.SlideBannerManager.SelectTop(10, Culture);
+   //         ViewData["ListSlide"] = listslide;
+   //         var listcompanycate = ServiceFactory.CompanyCateManager.GetTopHot(2, Culture);
+   //         ViewData["ListCompanyCate"] = listcompanycate;
+   //         var listnewshot = ServiceFactory.NewsManager.GetTopHot(2, Culture);
+   //         ViewData["ListNewsHot"] = listnewshot;
+   //         var listcompany = ServiceFactory.CompanyManager.GetAllActive(Culture);
+   //         ViewData["ListCompany"] = listcompany;
             return View();
 		}
 		public ActionResult Flight()
