@@ -162,7 +162,7 @@ MarkerLabel_.prototype.onAdd = function () {
       var position;
       if (cMouseIsDown) {
         cMouseIsDown = false;
-        me.eventDiv_.style.cursor = "pointer";
+        //me.eventDiv_.style.cursor = "pointer";
         google.maps.event.trigger(me.marker_, "mouseup", mEvent);
       }
       if (cDraggingLabel) {

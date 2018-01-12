@@ -605,34 +605,37 @@
         var marker = new MarkerWithLabel({
             position: homeLatLng,
             map: map,
-            draggable: true,
-            raiseOnDrag: true,
             labelContent: content,
             labelAnchor: new google.maps.Point(15, 65),
             labelClass: "listings-map-box",
             labelInBackground: false,
-            labelStyle:""
+            icon: {
+                url: "content/images/logo-r-red.svg",
+                scaledSize: new google.maps.Size(0, 0)
+            }
         });
         var markerRange = new MarkerWithLabel({
             position: GetPosition('21.0386095,105.8238746'),
             map: map,
-            draggable: true,
-            raiseOnDrag: true,
+            draggable: false,
+            raiseOnDrag: false,
             labelContent: '100',
             labelAnchor: new google.maps.Point(15, 65),
             labelClass: "gmap-group-label xl",
             labelInBackground: false,
-            labelStyle: ""
+            icon: {
+                url: "content/images/logo-r-red.svg",
+                scaledSize: new google.maps.Size(0, 0)
+            }
         });
         var iw = new google.maps.InfoWindow({
             content: "hyhy"
         });
-        google.maps.event.addListener(marker, "click", function (e) {
-            iw.open(map, this);
-            alert("hehe")
+        var iw1 = new google.maps.InfoWindow({
+            content: "haha"
         });
         google.maps.event.addListener(markerRange, "click", function (e) {
-            alert("hehấce")
+            iw1.open(map, this);
         });
     }
     function GetPosition(position) {
