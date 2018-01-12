@@ -21,7 +21,7 @@
     "outputFileName": "assets/dist/css/home.css",
     "inputFiles": [
       ////lib + legacy css
-      //"Content/plugins/bootstraps/bootstrap.min.css",
+      "Content/plugins/bootstraps/bootstrap.css",
       "Content/css/material-design-iconic-font.2.css",
       "content/css/jquery-ui.min.css",
       "content/css/font-awesome.min.css",
